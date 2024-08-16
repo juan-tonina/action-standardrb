@@ -11,6 +11,7 @@ git config --global --add safe.directory $GITHUB_WORKSPACE || exit 1
 
 export REVIEWDOG_GITHUB_API_TOKEN="${INPUT_GITHUB_TOKEN}"
 
+gem install -N parallel $(version $INPUT_PARALLEL_VERSION)
 gem install -N standard $(version $INPUT_STANDARD_VERSION)
 
 echo '::group:: Running standardrb with reviewdog 🐶 ...'
