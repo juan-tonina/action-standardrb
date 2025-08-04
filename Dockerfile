@@ -1,4 +1,4 @@
-FROM ruby:2.6.1-alpine
+FROM ruby:2.7.8-alpine
 
 ENV REVIEWDOG_VERSION v0.10.0
 
